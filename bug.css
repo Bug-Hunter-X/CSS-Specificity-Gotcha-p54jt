@@ -1,0 +1,12 @@
+The following CSS code snippet demonstrates an uncommon error related to the specificity of CSS selectors.  The `#id` selector has higher specificity than the `p` selector, so the `color: red;` rule from the `p` selector is overridden by the `color: blue;` rule from the `#id` selector, even though it is declared later. This behavior can be unexpected if you assume CSS rules are processed in the order they appear in the stylesheet. 
+
+```css
+p {
+  color: red;
+}
+
+#myParagraph {
+  color: blue;
+}
+
+```
